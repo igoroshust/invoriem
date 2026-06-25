@@ -1,0 +1,33 @@
+@import url('/css/reset.css');
+
+/* font-family: 'Gilroy', sans-serif; */
+/* font-family: "Work Sans", sans-serif; */
+
+body {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+}
+
+/* BUTTON */
+.btn {}
+
+/* HEADER */
+
+.header {}
+
+.container {
+    max-width: 1720px;
+    padding: 0 15px;
+}
+
+.header__top {
+    padding: 44px 0;
+}
+
+.nav {}
+
+.nav__logo {}
+
+.nav__list {}
+
+.link {}
