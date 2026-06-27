@@ -1,10 +1,22 @@
 Поиск шрифтов: [webfonts.pro](https://webfonts.pro/)
 
+Owlcarousel: [owlcarousel2.github.io/OwlCarousel2](https://owlcarousel2.github.io/OwlCarousel2/)
+
+CDN JS (подключение карусели и jQuery): [cdnjs.com](https://cdnjs.com/)
+
 Трактор: ctrl + shift + Q
 
 Пипетка: i
 
 Размеры элемента: alt + ctrl
+
+Дублировать слой: ctrl + D
+
+
+Owlcarousel:
+
+Подключаем карусель, плагин, тему
+
 
 1. Смотрим, есть ли сетка в макете, чтобы придерживаться её:
 
@@ -71,7 +83,6 @@
 }
 ```
 
-
 Позиционирование псевдоэлемента (стрелки) у кнопки
 
 ```CSS
@@ -86,3 +97,12 @@
     transform: translateY(-50%);
 }
 ```
+
+
+
+
+# Создание блока
+
+1. Создаём разметку элементов
+2. Ограничиваем блоки (title, text и тд) по ширине
+3. Описываем отступы сверху-снизу
