@@ -25,7 +25,7 @@
 <body>
 
     <!-- Header -->
-    <header class="header none">
+    <header class="header">
         <div class="container">
             <div class="header__top">
                 <nav class="nav">
@@ -52,8 +52,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="case-studies none">
+    <main class="">
+        <section class="case-studies">
             <div class="container">
                 <div class="case-studies__title">
                     <h2 class="title">Case Studies</h2>
@@ -91,30 +91,59 @@
             </div>
         </section>
 
-        <section class="video">
+        <section class="about">
             <div class="container">
-                <div class="video__title">
+                <div class="about__title">
                     <h2 class="title">We are Invoriem</h2>
                 </div>
-                <div class="video__text text">
-                    <p>We fulfill international property developments Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Eveniet totam corporis illo dolore. Ducimus necessitatibus repellat
-                        exercitationem expedita dolorem optio ipsa sint itaque. Deleniti, quos dolor? Autem quod
-                        voluptatibus sapiente hic, neque quis nihil velit nesciunt esse minima sit accusamus?</p>
+                <div class="about__text text">
+                    <p>We fulfill international property developments</p>
                 </div>
-                <div class="video__content">
+                <div class="about__content">
 
-                    <div class="video">
-                        <button>
+                    <div class="video video-overlay">
+                        <button class="video__btn" id="video-btn">
                             <img src="/image/icons/play-btn.svg" alt="Play">
                         </button>
-                    </div>
-                    <img class="video__picture" src="/image/video-picture.jpg" alt="Invoriem Video">
 
+                        <img class="video__picture" src="/image/video-picture.jpg" alt="Invoriem Video">
+
+                        <video class="video__object" id="video-file" loop>
+                            <source src="/image/city.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+
+                <div class="footer__copyright">Copyright © 2026 Invoriem</div>
+                <div class="footer__nav">
+                    <div class="footer__email"><a href="mailto:info@invoriem.com">info@invoriem.com</a></div>
+                    <div class="footer__socials">
+                        <a href="#!" class="social-icon">
+                            <img src="/image/icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#!" class="social-icon">
+                            <img src="/image/icons/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#!" class="social-icon">
+                            <img src="/image/icons/twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="#!" class="social-icon">
+                            <img src="/image/icons/linkedIn.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
