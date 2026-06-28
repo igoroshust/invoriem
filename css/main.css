@@ -7,6 +7,7 @@
     --bg-teal: #114455;
     --dark-grey: #1F1F1F;
     --dark-grey-transparent: rgba(31, 31, 31, 0.7);
+    --violet: rgba(73, 42, 211, 0.7);
 }
 
 
@@ -17,7 +18,7 @@ html {
 body {
     font-family: "Gilroy", sans-serif;
     font-weight: 500;
-    
+
     color: var(--dark-grey-transparent);
 }
 
@@ -26,7 +27,12 @@ body {
 }
 
 .hidden {
-    visibility: hidden; /* Размеры блока влияют на положение других элементов на странице при скрытии */
+    visibility: hidden;
+    /* Размеры блока влияют на положение других элементов на странице при скрытии */
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }
 
 .container {
@@ -163,7 +169,8 @@ body {
     position: absolute;
     bottom: 59px;
     left: 50%;
-    transform: translate(-50%); /* По горизонтали */
+    transform: translate(-50%);
+    /* По горизонтали */
 }
 
 
@@ -367,9 +374,114 @@ body {
     column-gap: 104px;
 }
 
-.footer__email {}
-
 .footer__socials {
     display: flex;
     column-gap: 26px;
 }
+
+/* Mobile nav */
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 44px 15px 32px 32px;
+}
+
+.mobile-nav__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.mobile-nav__logo {
+    max-width: 109px;
+}
+
+.mobile-nav__btn {
+    margin-right: 1px;
+}
+
+
+.mobile-list {
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: var(--dark-grey);
+    font-weight: 800;
+}
+
+.mobile-list a {
+    color: var(--dark-grey);
+}
+
+
+.mobile-contacts {
+    /* margin-bottom: 80px; */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.mobile-contacts a {
+    color: var(--dark-grey-transparent);
+}
+
+.mobile-contacts__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--dark-grey);
+}
+
+.mobile-contacts__email {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.mobile-contacts__phone {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.mobile-contacts__address {
+    font-style: normal;
+}
+
+.mobile-footer {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.mobile-footer__email {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--violet);
+}
+
+.mobile-socials {
+    margin-bottom: 32px;
+}
+
+.mobile-socials img {
+    width: 24px;
+}
+
+.mobile-footer__copyright {
+    font-size: 14px;
+    color: var(--dark-grey);
+}
+
+.mobile-social-icon {}
+
+.mobile-footer__copyright {}

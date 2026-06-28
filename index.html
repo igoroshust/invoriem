@@ -25,7 +25,6 @@
 
 <body>
 
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__top">
@@ -39,7 +38,7 @@
                         <li><a href="#!" class="btn">Let's talk</a></li>
                     </ul>
 
-                    <button class="nav__btn">
+                    <button class="nav__btn" id="openMobileNav">
                         <img src="/image/icons/burger.svg" alt="Mobile nav">
                     </button>
 
@@ -164,6 +163,62 @@
             </div>
         </div>
     </footer>
+
+    <section class="mobile-nav none" id="mobileNav">
+        <div class="mobile-nav__header">
+            <a href="#">
+                <img class="mobile-nav__logo" src="/image/logo.svg" alt="Logo">
+            </a>
+            <button class="mobile-nav__btn" id="closeMobileNav">
+                <img src="/image/icons/burger.svg" alt="Close nav">
+            </button>
+        </div>
+
+        <nav class="mobile-list">
+            <ul>
+                <li><a href="#">Hello</a></li>
+                <li><a href="#">Bonjour</a></li>
+                <li><a href="#">Ola</a></li>
+                <li><a href="#">Marhabaan</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-contacts">
+            <h4 class="mobile-contacts__title">Contact us</h4>
+
+            <a href="mailto:info@invoriem.com" class="mobile-contacts__email">info@invoriem.com</a>
+
+            <a href="tel:+55512345258" class="mobile-contacts__phone">+555 1234 52 58</a>
+
+            <address class="mobile-contacts__address">
+                3517 W. Gray St. <br>
+                Utica, Pennsylvania <br>
+                57867
+            </address>
+
+
+            <footer class="mobile-footer">
+                <a class="mobile-footer__email" href="mailto:info@invoriem.com">info@invoriem.com</a>
+
+                <div class="mobile-socials">
+                    <a href="#!" class="mobile-social-icon">
+                        <img src="/image/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="#!" class="mobile-social-icon">
+                        <img src="/image/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#!" class="mobile-social-icon">
+                        <img src="/image/icons/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="#!" class="mobile-social-icon">
+                        <img src="/image/icons/linkedIn.svg" alt="LinkedIn">
+                    </a>
+                </div>
+
+                <p class="mobile-footer__copyright">Copyright © 2026 Invoriem</p>
+            </footer>
+        </div>
+    </section>
 
 
 

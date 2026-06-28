@@ -1,6 +1,6 @@
 Поиск шрифтов: [webfonts.pro](https://webfonts.pro/)
 
-Owlcarousel: [owlcarousel2.github.io/OwlCarousel2](https://owlcarousel2.github.io/OwlCarousel2/)
+Owlcarousel: [owlcarousel2.github.io/OwlCarousel2](https://owlcarousel2.github.io/OwlCarousel2/) (подключаем карусель, плагин, тему)
 
 CDN JS (подключение карусели и jQuery): [cdnjs.com](https://cdnjs.com/)
 
@@ -14,9 +14,7 @@ CDN JS (подключение карусели и jQuery): [cdnjs.com](https://
 
 Дублировать слой: ctrl + D
 
-Owlcarousel:
-
-Подключаем карусель, плагин, тему
+Свернуть/развернуть содержимое html: `ctrl+K + 0` / `ctrl + K + J`
 
 # Начало работы с макетом
 
@@ -118,7 +116,6 @@ Owlcarousel:
 }
 ```
 
-
 # Проигрывание видео (скрипт)
 
 ```JavaScript
@@ -139,7 +136,6 @@ videoBtn.addEventListener('click', function(){
 
 - video.paused - свойство DOM-элемента (булево), показывающее текущее состояние (пауза или нет)
 - video.play() - это нативный метод HTMLMediaElement, который просит браузер начать воспроизведение
-
 
 # Полный пример настройки проигрывания видео
 
@@ -167,7 +163,6 @@ videoWrapper.addEventListener('click', function () {
     }
 });
 ```
-
 
 HTML
 
