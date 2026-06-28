@@ -6,13 +6,13 @@ CDN JS (подключение карусели и jQuery): [cdnjs.com](https://
 
 Сток видео: [www.istockphoto.com/ru/%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE](https://www.istockphoto.com/ru/%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE/)
 
-Трактор: ctrl + shift + Q
+Трактор: `ctrl + shift + Q`
 
 Пипетка: i
 
-Размеры элемента: alt + ctrl
+Размеры элемента: `alt + ctrl`
 
-Дублировать слой: ctrl + D
+Дублировать слой: `ctrl + D`
 
 Свернуть/развернуть содержимое html: `ctrl+K + 0` / `ctrl + K + J`
 
@@ -167,15 +167,15 @@ videoWrapper.addEventListener('click', function () {
 HTML
 
 ```HTML
-                    <div class="video video-overlay">
-                        <button class="video__btn" id="video-btn">
-                            <img src="/image/icons/play-btn.svg" alt="Play">
-                        </button>
+<div class="video video-overlay">
+	<button class="video__btn" id="video-btn">
+  		<img src="/image/icons/play-btn.svg" alt="Play">
+    </button>
 
-                        <img class="video__picture" src="/image/video-picture.jpg" alt="Invoriem Video">
+    <img class="video__picture" src="/image/video-picture.jpg" alt="Invoriem Video">
 
-                        <video class="video__object" id="video-file" loop>
-                            <source src="/image/city.mp4" type="video/mp4">
-                        </video>
-                    </div>
+    <video class="video__object" id="video-file" loop>
+    	<source src="/image/city.mp4" type="video/mp4">
+    </video>
+</div>
 ```
