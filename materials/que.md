@@ -59,3 +59,8 @@ background: linear-gradient(90deg, rgba(17, 68, 85, 1) 80px, rgba(255, 255, 255,
 -webkit-background-clip: text; /* Обрезает фон по форме текста (фон виден только внутри букв)) */
 -webkit-text-fill-color: transparent; /* Прозрачный цвет букв (виден фон)) */
 ```
+
+
+# vertical-align
+
+vertical-align - CSS-свойство, которое задаёт вертикальное выравнивание элемента относительно его родителя, строки текста или ячейки таблицы.

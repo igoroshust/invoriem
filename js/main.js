@@ -2,8 +2,22 @@ $(document).ready(
     function () {
         $('.owl-carousel').owlCarousel({
             dots: false,
-            margin: 48,
-            loop: true
+            loop: true,
+            items: 3,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 32,
+                    // stagePadding: 90,
+                },
+                601: {
+                    items: 3,
+                },
+                1001: {
+                    items: 3,
+                    margin: 48,
+                }
+            }
         }); // Находим на странице все элементы с классом owl-carousel и вызываем плагин owlCarousel()
     }
 );
@@ -16,7 +30,7 @@ const video = document.querySelector('#video-file');
 
 videoWrapper.addEventListener('click', function () {
     if (video.paused) {
-        videoPicture.classList.add('none');
+        videoPicture.classList.add('hidden');
         videoWrapper.classList.remove('video-overlay');
         videoBtn.classList.add('none');
 

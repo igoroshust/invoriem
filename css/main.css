@@ -6,18 +6,28 @@
 :root {
     --bg-teal: #114455;
     --dark-grey: #1F1F1F;
+    --dark-grey-transparent: rgba(31, 31, 31, 0.7);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    
+    color: var(--dark-grey-transparent);
 }
 
 .none {
     display: none !important;
 }
 
-
-body {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 500;
+.hidden {
+    visibility: hidden; /* Размеры блока влияют на положение других элементов на странице при скрытии */
 }
-
 
 .container {
     max-width: 1720px;
@@ -33,6 +43,15 @@ body {
     ширина экрана - ширина конейнера так мы получаем отступы слева и справа, которые были бы у обычного контейнера
     / 2 так и получаем один отступ (слева) 
     15px есть поле 15px */
+
+    overflow-x: hidden;
+}
+
+@media (max-width: 1749px) {
+    .container-right {
+        padding-left: 15px;
+        overflow-x: hidden;
+    }
 }
 
 /* .container-right {
@@ -122,6 +141,7 @@ body {
 /* HEADER */
 
 .header {
+    position: relative;
     height: 100vh;
     /* Высота экрана */
     background-color: #E0EDF1;
@@ -139,6 +159,13 @@ body {
     padding: 44px 0;
 }
 
+.header__arrows {
+    position: absolute;
+    bottom: 59px;
+    left: 50%;
+    transform: translate(-50%); /* По горизонтали */
+}
+
 
 /* Nav */
 .nav {
@@ -152,6 +179,10 @@ body {
     column-gap: 18px;
 }
 
+.nav__btn {
+    display: none;
+}
+
 .link {
     font-size: 20px;
     font-weight: 800;
@@ -160,6 +191,11 @@ body {
 
 
 /* Header content */
+.header__content-mobile {
+    display: none;
+}
+
+
 .header__content {
     max-width: 1060px;
 }
@@ -266,6 +302,7 @@ body {
 
 .video-overlay::after {
     content: '';
+    z-index: 8;
     position: absolute;
     left: 0;
     top: 0;
@@ -284,13 +321,21 @@ body {
 }
 
 .video__picture {
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
+
+    position: relative;
+    z-index: 7;
 }
 
 .video__object {
+    position: absolute;
+    left: 0;
+    top: 0;
+
     width: 100%;
+    height: 100%;
     vertical-align: top;
     /* Убираем дефолтную полоску для видео */
 }
